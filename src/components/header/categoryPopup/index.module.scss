@@ -1,0 +1,77 @@
+.category-popup {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #141329;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+
+  .category-menu {
+    max-height: calc(-52px + 100vh);
+    padding: 20px 0 54px;
+
+    > div {
+      max-width: 865px;
+    }
+
+    .normal-category {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      overflow: visible;
+      list-style: none;
+
+      li {
+        display: block;
+        width: calc(100% / 4);
+        margin-right: 0;
+        padding-bottom: 20px;
+        line-height: 26px;
+        float: none;
+        position: relative;
+        font-weight: bold;
+
+        a {
+          font-size: 16px;
+          color: #ddd;
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 4px;
+          height: 12px;
+          margin-right: 5px;
+          transform: skew(-20deg);
+          background-color: #dd3333;
+        }
+      }
+    }
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    overflow-y: auto;
+  }
+
+  .channels-menu {
+    width: 100%;
+    background: #333240;
+    padding: 17px 10px;
+    font-size: 13px;
+
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}

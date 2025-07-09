@@ -1,0 +1,47 @@
+@use "@/styles/_variables" as *;
+
+.search-form {
+  position: relative;
+  display: flex;
+
+  input {
+    position: absolute;
+    width: 150px;
+    height: 34px;
+    right: -1px;
+    top: 6px;
+    border-radius: 6px;
+    background-color: #444444;
+    padding-left: 15px;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0 10px;
+    border: none;
+    color: #d7d7d7;
+  }
+
+  &.active {
+    input {
+      width: 250px;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    button {
+      color: $link-color;
+    }
+  }
+
+  button {
+    background: transparent;
+    border: 0;
+    padding: 1px 6px;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+}

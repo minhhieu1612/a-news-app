@@ -1,0 +1,26 @@
+* Implement homepage
++ make banner
++ header
++ hash-tag trending
++ hot-news
+=> article-list
++ books section
+=> slider
++ multimedia
+=> multimedia, article-list, advertise-section, media-popuplar, podcast, memoir
++ business
+=> article-list
++ lifestyle
+=> article-list
++ multiple category
+=> category-title, article-list
++ magazine
+=> magazine-slider
++ video
++ footer
+
+* Utilize SSR to render content on serverside
+
+* Use Next API to simulate backend, assets and data
+
+* Links are clickable and navigate to dummy content
