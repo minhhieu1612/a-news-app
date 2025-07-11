@@ -1,3 +1,6 @@
+@use "~@/styles/mixins" as *;
+@use "~@/styles/variables" as *;
+
 .category-popup {
   position: absolute;
   top: 52px;
@@ -13,9 +16,14 @@
   .category-menu {
     max-height: calc(-52px + 100vh);
     padding: 20px 0 54px;
+    overflow: auto;
 
     > div {
       max-width: 865px;
+    }
+
+    @include media-screen-down($md) {
+      padding: 20px 0 134px;
     }
 
     .normal-category {
@@ -39,15 +47,21 @@
           font-size: 16px;
           color: #ddd;
         }
+      }
 
-        &::before {
-          content: "";
-          display: inline-block;
-          width: 4px;
-          height: 12px;
-          margin-right: 5px;
-          transform: skew(-20deg);
-          background-color: #dd3333;
+      @include media-screen-down($md) {
+        width: 100%;
+
+        li {
+          width: calc(100% / 2);
+          padding: 10px;
+          margin-bottom: 10px;
+          text-align: center;
+          min-height: unset;
+
+          &::before {
+            display: none;
+          }
         }
       }
     }
@@ -65,12 +79,29 @@
     padding: 17px 10px;
     font-size: 13px;
 
+    @include media-screen-down($md) {
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 0;
+    }
+
     nav {
       ul {
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @include media-screen-down($md) {
+          flex-wrap: wrap;
+
+          li {
+            width: calc(100% / 2);
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+          }
+        }
       }
     }
   }

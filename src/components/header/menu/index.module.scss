@@ -1,5 +1,5 @@
-@import "@/styles/_variables.scss";
-@import "@/styles/_mixins.scss";
+@use "~@/styles/_variables.scss" as *;
+@use "~@/styles/_mixins.scss" as *;
 
 .menu {
   width: calc(100% - 230px);

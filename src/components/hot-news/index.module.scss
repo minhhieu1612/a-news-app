@@ -1,0 +1,65 @@
+@use "~@/styles/_variables.scss" as *;
+@use "~@/styles/_mixins.scss" as *;
+
+.hot-news {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 20px;
+  margin-bottom: 20px;
+
+  .news-featured {
+    width: 70%;
+    order: 2;
+  }
+
+  .news-trending {
+    width: 30%;
+    padding-right: 20px;
+    order: 1;
+  }
+
+  @include media-screen-down($lg) {
+    margin-bottom: 50px;
+    justify-content: space-between;
+
+    .news-featured {
+      width: 58%;
+      order: 1;
+
+      > div {
+        grid-template-columns: 1fr 1fr;
+
+        > div {
+          &:first-child {
+            grid-column: 1 /3;
+            grid-row: 1 /1;
+
+            p {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .news-trending {
+      width: 39%;
+      order: 2;
+    }
+  }
+
+  @include media-screen-down($md) {
+    flex-direction: column;
+
+    .news-featured {
+      width: 100%;
+    }
+
+    .news-trending {
+      width: 100%;
+      margin-top: 25px;
+      border-top: 1px solid $border-color;
+      padding-top: 30px;
+    }
+  }
+}

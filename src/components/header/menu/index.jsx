@@ -1,6 +1,18 @@
 import styles from "./index.module.scss";
 
 export default function Menu({ showMore, setShowMore }) {
+  const handleToggleShowMore = () => {
+    setShowMore(!showMore);
+    const htmlEle = document.getElementsByTagName("html")[0];
+
+    // stop the page from scrolling
+    if (!showMore) {
+      htmlEle.classList.add("overflow-hidden");
+    } else {
+      htmlEle.classList.remove("overflow-hidden");
+    }
+  };
+
   return (
     <nav className={styles.menu}>
       <ul>
@@ -47,7 +59,7 @@ export default function Menu({ showMore, setShowMore }) {
         </li>
         <li
           className={`${styles.more} ${showMore ? styles.active : ""}`}
-          onClick={() => setShowMore(!showMore)}
+          onClick={handleToggleShowMore}
         >
           <span className={styles.dot}></span>
         </li>

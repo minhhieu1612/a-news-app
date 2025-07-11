@@ -10,13 +10,13 @@ export default function CategoryPopup({ isVisible }) {
       <nav className={styles["category-menu"]}>
         <div className="container">
           <ul className={styles["normal-category"]}>
-            <li className="parent xuat-ban ">
+            <li className="category-title xuat-ban ">
               <a href="/xuat-ban" title="Xuất bản">
                 Xuất bản
               </a>
             </li>
 
-            <li className="parent kinh-doanh-tai-chinh ">
+            <li className="category-title kinh-doanh-tai-chinh ">
               <a
                 href="https://znews.vn/kinh-doanh-tai-chinh.html"
                 title="Kinh doanh"
@@ -25,13 +25,13 @@ export default function CategoryPopup({ isVisible }) {
               </a>
             </li>
 
-            <li className="parent cong-nghe ">
+            <li className="category-title cong-nghe ">
               <a href="https://znews.vn/cong-nghe.html" title="Công nghệ">
                 Công nghệ
               </a>
             </li>
 
-            <li className="parent doi-song ">
+            <li className="category-title doi-song ">
               <a
                 href="https://lifestyle.znews.vn/doi-song.html"
                 title="Đời sống"
@@ -40,13 +40,13 @@ export default function CategoryPopup({ isVisible }) {
               </a>
             </li>
 
-            <li className="parent tac-gia ">
+            <li className="category-title tac-gia ">
               <a href="https://znews.vn/tac-gia.html" title="Tác giả">
                 Tác giả
               </a>
             </li>
 
-            <li className="parent suc-khoe ">
+            <li className="category-title suc-khoe ">
               <a
                 href="https://lifestyle.znews.vn/suc-khoe.html"
                 title="Sức khỏe"
@@ -55,31 +55,31 @@ export default function CategoryPopup({ isVisible }) {
               </a>
             </li>
 
-            <li className="parent giai-tri ">
+            <li className="category-title giai-tri ">
               <a href="https://znews.vn/giai-tri.html" title="Giải trí">
                 Giải trí
               </a>
             </li>
 
-            <li className="parent the-thao ">
+            <li className="category-title the-thao ">
               <a href="https://znews.vn/the-thao.html" title="Thể thao">
                 Thể thao
               </a>
             </li>
 
-            <li className="parent sach-hay ">
+            <li className="category-title sach-hay ">
               <a href="https://znews.vn/sach-hay.html" title="Thế giới sách">
                 Thế giới sách
               </a>
             </li>
 
-            <li className="parent du-lich ">
+            <li className="category-title du-lich ">
               <a href="https://lifestyle.znews.vn/du-lich.html" title="Du lịch">
                 Du lịch
               </a>
             </li>
 
-            <li className="parent lifestyle ">
+            <li className="category-title lifestyle ">
               <a
                 href="https://lifestyle.znews.vn/lifestyle.html"
                 title="Lifestyle"
@@ -88,13 +88,13 @@ export default function CategoryPopup({ isVisible }) {
               </a>
             </li>
 
-            <li className="parent oto-xe-may ">
+            <li className="category-title oto-xe-may ">
               <a href="https://lifestyle.znews.vn/oto-xe-may.html" title="Xe">
                 Xe
               </a>
             </li>
 
-            <li className="parent cuon-sach-toi-doc ">
+            <li className="category-title cuon-sach-toi-doc ">
               <a
                 href="https://znews.vn/cuon-sach-toi-doc.html"
                 title="Cuốn sách tôi đọc"
@@ -103,19 +103,19 @@ export default function CategoryPopup({ isVisible }) {
               </a>
             </li>
 
-            <li className="parent van-hoa-doc ">
+            <li className="category-title van-hoa-doc ">
               <a href="https://znews.vn/van-hoa-doc.html" title="Văn hóa đọc">
                 Văn hóa đọc
               </a>
             </li>
 
-            <li className="parent thoi-su ">
+            <li className="category-title thoi-su ">
               <a href="https://znews.vn/thoi-su.html" title="Xã hội">
                 Xã hội
               </a>
             </li>
 
-            <li className="parent thong-tin-cai-chinh ">
+            <li className="category-title thong-tin-cai-chinh ">
               <a
                 href="https://znews.vn/thong-tin-cai-chinh.html"
                 title="Cải chính"
@@ -124,7 +124,7 @@ export default function CategoryPopup({ isVisible }) {
               </a>
             </li>
 
-            <li className="parent nghien-cuu-xuat-ban ">
+            <li className="category-title nghien-cuu-xuat-ban ">
               <a
                 href="https://znews.vn/nghien-cuu-xuat-ban.html"
                 title="Nghiên cứu xuất bản"
@@ -133,7 +133,7 @@ export default function CategoryPopup({ isVisible }) {
               </a>
             </li>
 
-            <li className="parent phap-luat ">
+            <li className="category-title phap-luat ">
               <a
                 href="https://lifestyle.znews.vn/phap-luat.html"
                 title="Pháp luật"
@@ -142,13 +142,13 @@ export default function CategoryPopup({ isVisible }) {
               </a>
             </li>
 
-            <li className="parent the-gioi ">
+            <li className="category-title the-gioi ">
               <a href="https://znews.vn/the-gioi.html" title="Thế giới">
                 Thế giới
               </a>
             </li>
 
-            <li className="parent giao-duc ">
+            <li className="category-title giao-duc ">
               <a
                 href="https://lifestyle.znews.vn/giao-duc.html"
                 title="Giáo dục"
